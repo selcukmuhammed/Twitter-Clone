@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  --twitter-color: #ffffff;
+  --twitter-background: #000000;
+  background-color: #000000;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #e7e9ea;
+}
+
+.sidebarOption .material-icons,
+.fa-x-twitter {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.sidebarOption h2 {
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.sidebarOption:hover {
+  background-color: #181818;
+  border-radius: 30px;
+  color: white;
+  transition: color 100ms ease-out;
+}
+
+.sidebarOption.active {
+  color: #e7e9ea;
+}
+.sidebarOption.active:hover {
+  color: var(--twitter-color);
+}
+
+.sidebar_tweet {
+  width: 100%;
+  background-color: #00aced;
+  border: none;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 30px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.sidebar {
+  border-right: 1px solid #232628;
+  flex: 0.2;
+  min-width: 250px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fa-x-twitter {
+  color: var(--twitter-color);
+  font-size: 30px;
+}
+
+.feed {
+  flex: 0.5;
+  border-right: 1px solid #232628;
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+
+.feed_header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  border: 1px solid #232628;
+  padding: 15px 20px;
+}
+
+.feed_header h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+.feed {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Tweet box */
+
+.tweetBox_input img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.tweetBox {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2f3336;
+  padding-right: 10px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.tweetBox form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweetBox_input {
+  display: flex;
+  padding: 20px;
+}
+
+.tweetBox_input input {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+}
+
+.tweetBox_tweetButton {
+  background-color: #00aced;
+  border: none;
+  color: white;
+  font-weight: 900;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+
