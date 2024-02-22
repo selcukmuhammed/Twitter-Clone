@@ -8,6 +8,7 @@ body {
   --twitter-background: #000000;
   background-color: #000000;
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: inherit;
 }
 
 .sidebarOption {
@@ -87,7 +88,7 @@ body {
 .feed_header {
   position: sticky;
   top: 0;
-  background-color: #ffffff;
+  background-color: var(--twitter-background);
   z-index: 100;
   border: 1px solid #232628;
   padding: 15px 20px;
@@ -96,6 +97,7 @@ body {
 .feed_header h2 {
   font-size: 20px;
   font-weight: 800;
+  color: var(--twitter-color);
 }
 
 .feed::-webkit-scrollbar {
@@ -137,6 +139,7 @@ body {
   border: none;
   outline: none;
   background-color: #000000;
+  color: white;
 }
 
 .tweetBox_tweetButton {
@@ -212,3 +215,70 @@ body {
   padding: 10px;
 }
 
+.widgets {
+  flex: 0.3;
+}
+
+.widgets_input {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.widgets_input input {
+  flex: 1;
+  font-size: 20px;
+  border: none;
+  background-color: #232628;
+  color: var(--twitter-color);
+  outline: none;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.widgets_searchIcon {
+  position: static;
+  color: gray;
+}
+
+.widgets_widgetContainer {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #16181c;
+  border-radius: 20px;
+}
+
+.widgets_widgetContainer h2 {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--twitter-color);
+}
+
+.widgets_widgetTrends {
+  background-color: #16181c;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.widgets_widgetTrends h2 {
+  color: var(--twitter-color);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.widgets_widgetTrends ul {
+  list-style: none;
+  padding: 0;
+}
+
+.widgets_widgetTrends ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: var(--twitter-color);
+}
